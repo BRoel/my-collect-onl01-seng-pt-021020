@@ -8,5 +8,8 @@ def my_collect(array)
     name_collection.push yield(array[i])
     i += 1
   end
+  name_collection
+end
 
+my_collect(list) {|i| i.split(" ").first}
 
